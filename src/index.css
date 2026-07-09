@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-gray-800 font-sans;
+    background: linear-gradient(
+      180deg, 
+      #FFB08D 0%, 
+      #F4B2C3 30%, 
+      #DDBBEF 60%, 
+      #F2F2F7 100%
+    );
+    background-attachment: fixed;
+  }
+}
