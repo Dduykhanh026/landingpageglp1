@@ -53,10 +53,10 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-20 " id="problem">
+    <section className="pt-8 pb-20 " id="problem">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-primary font-semibold tracking-wide uppercase mb-3">The Challenge</h2>
+          <h2 className="text-primary font-bold tracking-widest uppercase mb-2 text-[12px] sm:text-[13px]">The Challenge</h2>
           <h3 className="text-title1 md:text-largeTitle font-bold text-gray-900 mb-6">Weight loss is more than just an injection.</h3>
           <p className="text-title3 text-gray-600">
             Taking a GLP-1 medication like Ozempic or Wegovy is life-changing, but it comes with challenges that traditional calorie trackers aren't built to handle.
@@ -71,7 +71,7 @@ const ProblemSection = () => {
                 isVisible ? "translate-x-0 translate-y-0 opacity-100" : hiddenClasses[index]
               }`}
             >
-              <Card className="bg-white hover:-translate-y-1 transition-transform duration-300 h-full">
+              <Card className="bg-white !shadow-xl hover:-translate-y-1 transition-transform duration-300 h-full">
                 <div className="text-largeTitle mb-4">{item.icon}</div>
                 <h4 className="text-title3 font-bold text-gray-900 mb-3">{item.title}</h4>
                 <p className="text-gray-600 leading-relaxed">{item.description}</p>

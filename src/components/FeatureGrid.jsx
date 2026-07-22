@@ -50,10 +50,10 @@ const FeatureGrid = () => {
               className={`h-full transition-all duration-700 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: `${idx * 100 + 100}ms` }}
             >
-              <Card className="h-full bg-gray-50 border-none hover:bg-white hover:shadow-md transition-all">
-                <div className="text-title1 mb-4">{feat.icon}</div>
-                <h4 className="text-title3 font-bold text-gray-900 mb-2">{feat.title}</h4>
-                <p className="text-gray-600 text-subhead leading-relaxed">{feat.desc}</p>
+              <Card className="h-full bg-white !shadow-xl border-none flex flex-col p-6 sm:p-8 hover:-translate-y-1 active:scale-[0.98] transition-all duration-300">
+                <div className="mb-4 shrink-0">{feat.icon}</div>
+                <h3 className="text-[19px] sm:text-title3 font-bold text-gray-900 mb-3">{feat.title}</h3>
+                <p className="text-gray-600 text-[15px] sm:text-subhead leading-relaxed flex-grow">{feat.desc}</p>
               </Card>
             </div>
           ))}

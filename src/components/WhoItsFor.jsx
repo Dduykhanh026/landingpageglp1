@@ -10,7 +10,7 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-24 bg-primary text-white" id="who-its-for">
+    <section className="py-16 md:py-24 bg-primary text-white" id="who-its-for">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-title1 md:text-largeTitle font-bold mb-4">Built for your specific journey</h2>
@@ -20,7 +20,7 @@ const WhoItsFor = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {users.map((user, idx) => (
             <Card key={idx} className="bg-white/10 border-white/20 text-white hover:bg-white/20 transition-colors">
-              <h4 className="text-title3 font-bold mb-3">{user.title}</h4>
+              <h3 className="text-title3 font-bold mb-3">{user.title}</h3>
               <p className="text-white/60 leading-relaxed text-subhead">{user.desc}</p>
             </Card>
           ))}

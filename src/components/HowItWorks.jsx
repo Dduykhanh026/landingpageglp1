@@ -38,10 +38,10 @@ const HowItWorks = () => {
   }];
 
   return (
-    <section className="py-24" id="how-it-works" ref={sectionRef}>
+    <section className="py-16 md:py-24" id="how-it-works" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-primary font-semibold tracking-wide uppercase mb-3">How It Works</h2>
+          <h2 className="text-primary font-bold tracking-widest uppercase mb-2 text-[12px] sm:text-[13px]">How It Works</h2>
           <h3 className="text-title1 md:text-largeTitle font-bold text-gray-900">Three simple steps to success</h3>
         </div>
         

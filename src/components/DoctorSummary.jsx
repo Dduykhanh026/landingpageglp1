@@ -2,7 +2,7 @@ import { Squircle } from '@squircle-js/react';
 import React from 'react';
 import Button from './ui/Button';
 const DoctorSummary = () => {
-  return <section className="py-24 border-y border-gray-200" id="doctor-report">
+  return <section className="py-16 md:py-24 border-y border-gray-200" id="doctor-report">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Squircle className="bg-white shadow-xl overflow-hidden" cornerRadius={40} cornerSmoothing={1}>
           <div className="lg:flex">

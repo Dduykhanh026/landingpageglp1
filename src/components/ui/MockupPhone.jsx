@@ -4,9 +4,9 @@ const MockupPhone = ({
   children,
   className = ''
 }) => {
-  return <Squircle cornerRadius={40} cornerSmoothing={1} className={`relative mx-auto border-app-darkCard dark:border-app-darkCard bg-app-darkCard border-[8px] h-[600px] w-[300px] shadow-xl overflow-hidden ${className}`}>
+  return <Squircle cornerRadius={40} cornerSmoothing={1} className={`relative mx-auto border-app-darkCard dark:border-app-darkCard bg-app-darkCard border-[8px] w-[260px] h-[520px] md:w-[300px] md:h-[600px] shadow-xl overflow-hidden shrink-0 ${className}`}>
       {/* Notch */}
-      <Squircle cornerRadius={16} cornerSmoothing={1} className="w-[148px] h-[18px] bg-app-darkCard top-0 left-1/2 -translate-x-1/2 absolute z-20"></Squircle>
+      <Squircle cornerRadius={16} cornerSmoothing={1} className="w-[128px] h-[16px] md:w-[148px] md:h-[18px] bg-app-darkCard top-0 left-1/2 -translate-x-1/2 absolute z-20"></Squircle>
       
       {/* Screen Content */}
       <Squircle cornerRadius={32} cornerSmoothing={1} className="bg-white dark:bg-gray-100 h-[100%] w-[100%] overflow-hidden relative">

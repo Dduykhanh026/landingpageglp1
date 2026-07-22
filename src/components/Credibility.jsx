@@ -2,7 +2,7 @@ import { Squircle } from '@squircle-js/react';
 import React from 'react';
 import Card from './ui/Card';
 const Credibility = () => {
-  return <section className="py-24 " id="science">
+  return <section className="py-16 md:py-24" id="science">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Expert Advisory Board */}

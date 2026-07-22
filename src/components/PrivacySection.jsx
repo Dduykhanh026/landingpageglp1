@@ -27,7 +27,7 @@ const PrivacySection = () => {
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {points.map((point, idx) => <Squircle key={idx} className="bg-app-darkCard p-6 border border-gray-700 text-center" cornerRadius={20} cornerSmoothing={1}>
-              <h4 className="font-bold text-title3 mb-2 text-gray-100">{point.title}</h4>
+              <h3 className="font-bold text-title3 mb-2 text-gray-100">{point.title}</h3>
               <p className="text-gray-400 text-subhead">{point.desc}</p>
             </Squircle>)}
         </div>

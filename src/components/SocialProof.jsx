@@ -16,11 +16,11 @@ const SocialProof = () => {
   return (
     <section className="py-12 border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-8 md:gap-8 text-center">
           {metrics.map((metric, index) => (
-            <div key={index} className="flex flex-col items-center justify-center">
-              <span className="text-title1 md:text-largeTitle font-extrabold text-gray-900 mb-2 whitespace-nowrap">{metric.value}</span>
-              <span className="text-subhead font-medium text-gray-500 uppercase tracking-wider">{metric.label}</span>
+            <div key={index} className="flex flex-col items-center justify-center px-1">
+              <span className="text-[22px] sm:text-title1 md:text-largeTitle font-extrabold text-gray-900 mb-1 md:mb-2 leading-tight text-center break-words">{metric.value}</span>
+              <span className="text-[11px] sm:text-caption1 md:text-subhead font-bold text-gray-500 uppercase tracking-wider text-center">{metric.label}</span>
             </div>
           ))}
         </div>

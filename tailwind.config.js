@@ -8,11 +8,25 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+          '25%': { transform: 'translateY(-10px) rotate(2deg)' },
+          '50%': { transform: 'translateY(-15px) rotate(0deg)' },
+          '75%': { transform: 'translateY(-10px) rotate(-2deg)' },
+        }
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+      },
       fontFamily: {
         sans: AppFonts.family.sans,
         mono: AppFonts.family.mono,
       },
       fontSize: AppFonts.size,
+      dropShadow: {
+        'mockup': '0 12px 40px rgba(0, 0, 0, 0.15)',
+      },
       colors: {
         primary: {
           DEFAULT: AppColors.primary.light,

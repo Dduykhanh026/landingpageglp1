@@ -4,7 +4,7 @@ import Card from './ui/Card';
 import Button from './ui/Button';
 const QuizSection = () => {
   const [step, setStep] = useState(1);
-  return <section className="py-24  ">
+  return <section className="py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-title1 md:text-largeTitle font-bold text-gray-900 mb-4">Get your personalized tracking plan</h2>
